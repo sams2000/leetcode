@@ -6,7 +6,8 @@ import model.TreeNode;
 
 /**
  * 
- * @author bin zhou [zhzhoubin@gmail.com]
+ * @author bin zhou 
+ *         Created on Feb 17, 2016
  *
  */
 public class searchRange {
