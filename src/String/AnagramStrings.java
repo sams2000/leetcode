@@ -1,6 +1,6 @@
 package String;
 
-public class anagram_1 {
+public class AnagramStrings {
     /**
      * @param s: The first string
      * @param b: The second string
@@ -16,9 +16,6 @@ public class anagram_1 {
        for(int i=0;i<s.length();i++){
            s1[s.charAt(i)]++;
            t1[t.charAt(i)]++;
-         
-          
-       
        }
 
        

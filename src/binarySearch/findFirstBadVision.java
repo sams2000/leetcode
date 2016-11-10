@@ -18,12 +18,12 @@ public class findFirstBadVision {
             return VersionControl.isBadVersion(1) ? 1 : 0;
         int l = 0;
         int r = n;
-        int minum = n;
+
         while (l + 1 < r) {
             int mid = l + (r - l) / 2;
             if (VersionControl.isBadVersion(mid)) {
                 r = mid;
-                // minum=Math.min(minum,mid);
+
             } else {
                 l = mid + 1;
             }

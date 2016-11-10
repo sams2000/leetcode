@@ -1,3 +1,4 @@
+package com.example.leet;
 /**
  * Add two array represented integers
  * 
@@ -23,7 +24,6 @@ public class AddArrayIntegers {
         int i=a.length, j=b.length;
         
         int d=1, carry=0, result=0;
-        
         
         while(i>0 && j>0){
             int cur = a[i-1] + b[j-1] + carry;

@@ -1,15 +1,3 @@
-/*
- * Given an array of strings, return all groups of strings that are anagrams.
-
-Example
-Given ["lint", "intl", "inlt", "code"], return ["lint", "inlt", "intl"].
-
-Given ["ab", "ba", "cd", "dc", "e"], return ["ab", "ba", "cd", "dc"].
-
-Note
-All inputs will be in lower-case
- */
-
 package String;
 
 import java.util.ArrayList;
@@ -17,25 +5,40 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+/** Given an array of strings, return all groups of strings that are anagrams.
 
+    Example
+    Given ["lint", "intl", "inlt", "code"], return ["lint", "inlt", "intl"].
+    
+    Given ["ab", "ba", "cd", "dc", "e"], return ["ab", "ba", "cd", "dc"].
+    
+    Note
+    All inputs will be in lower-case
+ */
 public class Anagrams {
+    public static void main(String[] args) {
+        String[] strs = {"ab", "ba", "cd", "dc", "e"};
+        List<String> result = anagrams(strs);
+        for (String string : result){
+            System.out.print(string + ",");
+        }
+    }
+    
     /**
      * @param strs: A list of strings
      * @return: A list of strings
      */
     public static List<String> anagrams(String[] strs) {
-        // write your code here
-        if (strs.length==0||strs==null) return null;
+        if (strs.length==0||strs==null) 
+            return null;
+        
         List<String> res=new ArrayList<String>();
         Map<String, List<String>> map=new HashMap<String,List<String>>();
         for(int i=0;i<strs.length;i++){
-            
-             // Sort the string.            
+            // Sort the string
             char[] chars = strs[i].toCharArray();
             Arrays.sort(chars);
             String strSort = new String(chars);   
-            
-        
             
             if (map.containsKey(strSort)){
                 map.get(strSort).add(strs[i]);

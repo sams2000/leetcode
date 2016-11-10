@@ -7,7 +7,7 @@ package binarySearch;
  */
 public class binarySearchDuplicateSortedArray {
 	 public int binarySearch(int[] nums, int target) {
-         if (nums.length==0) return -1;
+       if (nums.length==0) return -1;
        int start=0;
        int last=nums.length-1;
        while(start<=last){

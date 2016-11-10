@@ -1,6 +1,6 @@
 package binarySearch;
 
-public class woodCut {
+public class WoodCut {
     public static void main(String[] args) {
         int[] array = { 2147483644, 2147483645, 2147483646, 2147483647 };
         System.out.println(woodCut(array, 4));
